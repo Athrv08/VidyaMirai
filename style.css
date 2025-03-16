@@ -1,66 +1,72 @@
-/* CSS for styling */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
 }
 
 header {
-    background-color: #0073e6;
+    background-color: #333;
     color: white;
     padding: 20px;
-    font-size: 24px;
+    text-align: center;
 }
 
-nav {
-    background-color: #005bb5;
-    padding: 10px;
-    text-align: left;
-    position: relative;
+h1 {
+    font-size: 2.5em;
 }
 
-.menu-icon {
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
+.book-category {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
+.book-category h2 {
+    color: #333;
+    margin-bottom: 10px;
 }
 
-ul li {
-    background-color: #0073e6;
-    margin: 5px 0;
+.book-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
 }
 
-ul li a {
+.book-item img {
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.book-item h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.book-item p {
+    color: #777;
+}
+
+.book-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007BFF;
     color: white;
     text-decoration: none;
-    display: block;
-    padding: 10px;
+    border-radius: 4px;
 }
 
-ul li a:hover {
-    background-color: #004080;
-}
-
-/* Show menu when active */
-ul.active {
-    display: block;
+.book-item a:hover {
+    background-color: #0056b3;
 }
 
 footer {
-    background-color: #0073e6;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
     color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
