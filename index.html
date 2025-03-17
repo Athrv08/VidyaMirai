@@ -3,130 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Website</title>
-    <style>
-        /* Basic Styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-
-        /* Navigation Bar */
-        .navbar {
-            background-color: #005bb5;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-            align-items: center;
-            color: white;
-        }
-
-        .navbar .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .menu {
-            display: flex;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 5px;
-            background-color: #0073e6;
-            border-radius: 5px;
-            display: inline-block;
-        }
-
-        .menu a:hover {
-            background-color: #004080;
-        }
-
-        /* Three Dots Menu */
-        .dots-menu {
-            display: none;
-            position: relative;
-        }
-
-        .dots {
-            cursor: pointer;
-            font-size: 24px;
-        }
-
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 30px;
-            right: 0;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            padding: 10px;
-            text-align: left;
-        }
-
-        .submenu a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-        }
-
-        .submenu a:hover {
-            background-color: #f1f1f1;
-        }
-
-        /* Responsive Menu */
-        @media screen and (max-width: 768px) {
-            .menu {
-                display: none;
-            }
-            .dots-menu {
-                display: block;
-            }
-        }
-    </style>
+    <title>GlobalXpose - Learn & Grow</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">GX</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="login-btn">Login/Register</button>
+    </header>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <div class="logo">EduWebsite</div>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="library.html">Library</a>
-            <a href="contact.html">Contact</a>
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="offer">🔥 Special Discount on All Courses! Join Now 🔥</div>
+        <h1>Bharat's <span>Trusted & Affordable</span> Learning Platform</h1>
+        <p>Unlock your potential with GlobalXpose - The ultimate educational hub.</p>
+        <button class="get-started">Get Started</button>
+    </section>
+
+    <!-- Interactive Chat Section -->
+    <section class="chat-section">
+        <div class="chat-box">
+            <p class="chat-message">"Alakh Sir, What is PW?"</p>
         </div>
-        <div class="dots-menu">
-            <span class="dots" onclick="toggleMenu()">⋮</span>
-            <div class="submenu" id="submenu">
-                <a href="index.html">Home</a>
-                <a href="courses.html">Courses</a>
-                <a href="library.html">Library</a>
-                <a href="contact.html">Contact</a>
-            </div>
+        <div class="chat-box">
+            <p class="chat-response">PW is where students learn with love and guidance.</p>
         </div>
+    </section>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <button class="live-btn">🔴 LIVE</button>
+        <button class="support-btn">📞 Support</button>
     </div>
-
-    <h1>Welcome to Our Educational Platform</h1>
-    <p>Explore courses, books, and resources to enhance your learning experience.</p>
-
-    <script>
-        function toggleMenu() {
-            var submenu = document.getElementById("submenu");
-            if (submenu.style.display === "block") {
-                submenu.style.display = "none";
-            } else {
-                submenu.style.display = "block";
-            }
-        }
-    </script>
-
 </body>
 </html>
