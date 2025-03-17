@@ -3,68 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books Library</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Library - Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #0073e6;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #004080;
+        }
+        .container {
+            padding: 20px;
+        }
+        .search-bar {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #0073e6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .book {
+            display: inline-block;
+            width: 200px;
+            margin: 15px;
+            padding: 15px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .book img {
+            width: 100%;
+            height: 250px;
+            border-radius: 5px;
+        }
+        .book h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .book a {
+            display: block;
+            background: #0073e6;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .book a:hover {
+            background: #004080;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Books Library</h1>
-        <p>Explore the best books for JEE, NEET, UPSC, and NDA preparation.</p>
-    </header>
 
-    <section class="book-category">
-        <h2>JEE Preparation</h2>
-        <div class="book-item">
-            <img src="book1-image.jpg" alt="Book 1">
-            <h3>Concepts of Physics</h3>
-            <p>Author: H.C. Verma</p>
-            <a href="https://www.amazon.com/dp/8177092204" target="_blank">Buy on Amazon</a>
-            <a href="https://www.ncert.nic.in/textbook.php" target="_blank">Official Source</a>
-        </div>
-        <div class="book-item">
-            <img src="book2-image.jpg" alt="Book 2">
-            <h3>Problems in General Physics</h3>
-            <p>Author: I.E. Irodov</p>
-            <a href="https://www.amazon.com/dp/9352537606" target="_blank">Buy on Amazon</a>
-            <a href="https://www.ncert.nic.in/textbook.php" target="_blank">Official Source</a>
-        </div>
-    </section>
+<header>
+    Welcome to Our Library
+</header>
 
-    <section class="book-category">
-        <h2>NEET Preparation</h2>
-        <div class="book-item">
-            <img src="book3-image.jpg" alt="Book 3">
-            <h3>NCERT Biology</h3>
-            <p>Author: NCERT</p>
-            <a href="https://www.amazon.com/dp/9352537819" target="_blank">Buy on Amazon</a>
-            <a href="https://www.ncert.nic.in/textbook.php" target="_blank">Official Source</a>
-        </div>
-    </section>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="library.html">Library</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-    <section class="book-category">
-        <h2>UPSC Preparation</h2>
-        <div class="book-item">
-            <img src="book4-image.jpg" alt="Book 4">
-            <h3>Indian Polity</h3>
-            <p>Author: M. Laxmikanth</p>
-            <a href="https://www.amazon.com/dp/9352601012" target="_blank">Buy on Amazon</a>
-            <a href="https://www.ncert.nic.in/textbook.php" target="_blank">Official Source</a>
-        </div>
-    </section>
+<div class="container">
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search for books, notes, PDFs..." onkeyup="searchLibrary()">
 
-    <section class="book-category">
-        <h2>NDA Preparation</h2>
-        <div class="book-item">
-            <img src="book5-image.jpg" alt="Book 5">
-            <h3>NDA Mathematics</h3>
-            <p>Author: R.S. Aggarwal</p>
-            <a href="https://www.amazon.com/dp/9388018202" target="_blank">Buy on Amazon</a>
-            <a href="https://www.ncert.nic.in/textbook.php" target="_blank">Official Source</a>
+    <div id="library">
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <h3>Physics for JEE</h3>
+            <a href="https://example.com/physics-book.pdf" target="_blank">Download</a>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2025 Books Library | All Rights Reserved</p>
-    </footer>
+        <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <h3>Mathematics for JEE</h3>
+            <a href="https://example.com/math-book.pdf" target="_blank">Download</a>
+        </div>
+
+        <div class="book">
+            <img src="book3.jpg" alt="Book 3">
+            <h3>Chemistry Notes</h3>
+            <a href="https://example.com/chemistry-notes.pdf" target="_blank">Download</a>
+        </div>
+        
+        <div class="book">
+            <img src="book4.jpg" alt="Book 4">
+            <h3>Python Programming</h3>
+            <a href="https://example.com/python-book.pdf" target="_blank">Download</a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    function searchLibrary() {
+        let input = document.getElementById('searchInput').value.toLowerCase();
+        let books = document.getElementsByClassName('book');
+
+        for (let i = 0; i < books.length; i++) {
+            let title = books[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+            if (title.includes(input)) {
+                books[i].style.display = "inline-block";
+            } else {
+                books[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
 </body>
 </html>
