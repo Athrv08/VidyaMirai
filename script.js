@@ -1,4 +1,3 @@
-function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-}
+document.getElementById("learnMoreBtn").addEventListener("click", function() {
+    alert("VidyaMirai: The future of education!");
+});
