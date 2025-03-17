@@ -4,30 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Website</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #005bb5;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #0073e6;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background-color: #004080;
+        }
+
+        /* Three Dots Menu */
+        .dots-menu {
+            display: none;
+            position: relative;
+        }
+
+        .dots {
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .submenu a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Responsive Menu */
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+            .dots-menu {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    Welcome to Our Educational Website
-</header>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">EduWebsite</div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="library.html">Library</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="dots-menu">
+            <span class="dots" onclick="toggleMenu()">⋮</span>
+            <div class="submenu" id="submenu">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="library.html">Library</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
 
-<nav>
-    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-    <ul id="menu">
-        <li><a href=>Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="library.html">Library</a></li>
-        <li><a href="resource.html">Resource</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <h1>Welcome to Our Educational Platform</h1>
+    <p>Explore courses, books, and resources to enhance your learning experience.</p>
 
-<footer>
-    &copy; 2025 Educational Website. All Rights Reserved.
-</footer>
-
-<script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            var submenu = document.getElementById("submenu");
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+        }
+    </script>
 
 </body>
 </html>
