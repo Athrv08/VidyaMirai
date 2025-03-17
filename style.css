@@ -1,54 +1,146 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
 }
 
-header {
-    background: #007bff;
-    color: white;
-    padding: 15px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 10px;
-}
-
-footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-}
-
-button {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #007bff;
+    padding: 15px;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    display: block;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.menu-icon {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background: white;
+    list-style: none;
+    width: 180px;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Show submenu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 200px;
+        text-align: left;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        color: black;
+        padding: 12px;
+    }
+
+    .menu a:hover {
+        background: #007bff;
+        color: white;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+header {
+    padding: 50px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
