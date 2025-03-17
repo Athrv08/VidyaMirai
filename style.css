@@ -1,108 +1,54 @@
-/* General Page Styling */
 body {
-    font-family: 'Georgia', serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('https://www.transparenttextures.com/patterns/old-map.png');
-    background-color: #f5f5dc; /* Light Beige - Old Paper Effect */
-    color: #3e2723; /* Dark Brown - Bookish Feel */
+    text-align: center;
+    background-color: #f4f4f4;
 }
 
-/* Header Section */
 header {
-    text-align: center;
-    padding: 20px;
-    background: rgba(139, 69, 19, 0.8); /* Dark Wood Effect */
-    color: #ffebcd;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Book Category Section */
-.book-category {
-    max-width: 90%;
-    margin: 30px auto;
-    padding: 20px;
-    background: rgba(255, 248, 220, 0.9); /* Light Cream */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.book-category h2 {
-    color: #8b4513; /* Saddle Brown */
-    border-bottom: 2px solid #8b4513;
-    padding-bottom: 5px;
-    text-align: center;
-}
-
-/* Book Item Styling */
-.book-item {
-    display: flex;
-    align-items: center;
-    background: rgba(139, 69, 19, 0.2);
-    margin: 15px 0;
+    background: #007bff;
+    color: white;
     padding: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
 }
 
-.book-item:hover {
-    transform: scale(1.03);
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Book Image */
-.book-item img {
-    width: 130px;
-    height: 180px;
-    border-radius: 5px;
-    margin-right: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Book Details */
-.book-item h3 {
-    font-size: 1.4em;
-    color: #6d4c41; /* Coffee Brown */
-    margin-bottom: 5px;
-}
-
-.book-item p {
-    font-size: 1.1em;
-    color: #5d4037; /* Deep Brown */
-}
-
-/* Buy & Official Source Links */
-.book-item a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    border-radius: 5px;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
 }
 
-.book-item a:first-child {
-    background: #d2691e; /* Chocolate */
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+footer {
+    background: #333;
     color: white;
+    padding: 10px;
 }
 
-.book-item a:first-child:hover {
-    background: #b35900;
-}
-
-.book-item a:last-child {
-    background: #8b0000; /* Dark Red */
+button {
+    background-color: #007bff;
     color: white;
-    margin-left: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.book-item a:last-child:hover {
-    background: #660000;
+button:hover {
+    background-color: #0056b3;
 }
-
