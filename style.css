@@ -1,115 +1,105 @@
-/* General Page Styling */
+/* Basic Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* Header Section */
+/* Navigation Bar */
 header {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-    font-size: 2.8em;
-    margin: 10px 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Book Category Section */
-.book-category {
-    max-width: 90%;
-    margin: 30px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.book-category h2 {
-    color: #ffcc00;
-    border-bottom: 2px solid #ffcc00;
-    padding-bottom: 5px;
-    text-align: center;
-}
-
-/* Book Item Styling */
-.book-item {
-    display: flex;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.3);
-    margin: 15px 0;
+    background-color: #0084ff;
     padding: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+    text-align: center;
 }
 
-.book-item:hover {
-    transform: scale(1.03);
+header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-/* Book Image */
-.book-item img {
-    width: 130px;
-    height: 180px;
-    border-radius: 5px;
-    margin-right: 20px;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Book Details */
-.book-item h3 {
-    font-size: 1.5em;
-    color: #ffeb3b;
-    margin-bottom: 5px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.book-item p {
-    font-size: 1.1em;
-    color: #ddd;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-/* Buy & Official Source Links */
-.book-item a {
+/* About Us Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+    font-size: 32px;
+    color: #222;
+}
+
+.about .highlight {
+    color: #0084ff;
+    font-weight: bold;
+}
+
+.about h2 {
+    font-size: 24px;
+    color: #0084ff;
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Button */
+.btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 10px 18px;
-    border-radius: 5px;
+    background-color: #0084ff;
+    color: white;
+    padding: 12px 24px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
 }
 
-.book-item a:first-child {
-    background: #ff9800;
-    color: white;
-}
-
-.book-item a:first-child:hover {
-    background: #e68900;
-}
-
-.book-item a:last-child {
-    background: #03a9f4;
-    color: white;
-    margin-left: 10px;
-}
-
-.book-item a:last-child:hover {
-    background: #0288d1;
+.btn:hover {
+    background-color: #005bb5;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #ffcc00;
-    margin-top: 30px;
-    font-weight: bold;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
 }
