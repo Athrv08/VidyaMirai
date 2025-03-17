@@ -12,11 +12,19 @@
     <!-- Navigation Bar -->
     <header>
         <h1>VidyaMirai</h1>
-        <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#x22EE;</div> <!-- Three-dot Menu -->
+        <nav id="navMenu">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#">Course Library ▾</a>
+                    <ul class="submenu">
+                        <li><a href="#">JEE Preparation</a></li>
+                        <li><a href="#">NEET Preparation</a></li>
+                        <li><a href="#">UPSC Resources</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -26,12 +34,6 @@
         <h2>Welcome to VidyaMirai</h2>
         <p>Your gateway to futuristic learning.</p>
         <button id="learnMoreBtn">Learn More</button>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>VidyaMirai is an educational platform that aims to revolutionize learning using modern technology.</p>
     </section>
 
     <!-- Contact Section -->
